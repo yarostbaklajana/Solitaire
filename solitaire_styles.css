@@ -1,0 +1,412 @@
+body {
+	min-width: 650px;
+	background: url('back_pony.png');
+}
+
+.container {
+	display: block;	
+
+}
+
+.card {
+	border: 1px solid black;
+	height: 70px;
+	width: 50px;
+	border-radius: 7%;
+	background: url('pony_little_size.jpeg');
+
+}
+
+.deck-box{
+	display: block;
+	width: 100%;
+	max-height: 100px;
+}
+
+.cell {
+	border: 1px solid black;
+	height: 70px;
+	width: 50px;
+	border-radius: 7%;
+	box-shadow: 3px 3px 5px grey;
+}
+
+.deck-row {
+	width: 40%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.deck-cell {	
+	margin: 10px 15px;
+	display: inline-block;
+	border: 1px solid black;
+	height: 70px;
+	width: 50px;
+	border-radius: 7%;
+}
+
+.empty-valid-sell {
+	border: 1px solid pink;
+	border-radius: 7%;
+}
+
+.lightning {
+	background-color: pink;
+	opacity: 80%;
+}
+
+.unordered-deck {
+	position: absolute;
+}
+
+.card-check-box {	
+	display: inline-block;
+	margin: 10px 0;	
+	position: absolute;
+	height: 70px;
+	width: 50px;
+}
+
+.ordered-deck-row {
+	display: inline-block;
+	width: 50%;
+	margin: 0;
+	text-align: right;
+}
+
+.ordered-deck {
+	display: inline-block;	
+	margin: 10px 5px;
+}
+
+.columns-row {
+	width: 95%;
+	padding-top: 50px;
+	display: inline-block;
+	height: 100px;
+	text-align: right;
+
+}
+
+.column {
+	display: inline-block;
+	width: 50px;
+	height: 70px;	
+	margin: 10px 5px;
+}
+
+.unordered {	
+	margin: 0;
+	padding: 0;	
+	position: absolute;
+	box-shadow: 5px 5px 10px grey;
+}
+
+.checked {
+	margin-left: -2px;
+	margin-top: -2px;
+	box-shadow: 5px 5px 10px grey;
+}
+
+.unordered:first-child{
+	margin-top: 0;
+}
+
+.unordered:nth-child(2){
+	margin-top: 30px;
+}
+
+.unordered:nth-child(3){
+	margin-top: 60px;
+}
+
+.unordered:nth-child(4){
+	margin-top: 90px;
+}
+
+.unordered:nth-child(5){
+	margin-top: 120px;
+}
+
+.unordered:nth-child(6){
+	margin-top: 150px;
+}
+
+.unordered:nth-child(7){
+	margin-top: 180px;
+}
+
+.unordered:nth-child(8){
+	margin-top: 210px;
+}
+
+.unordered:nth-child(9){
+	margin-top: 240px;
+}
+
+.unordered:nth-child(10){
+	margin-top: 270px;
+}
+
+.unordered:nth-child(11){
+	margin-top: 300px;
+}
+
+.unordered:nth-child(12){
+	margin-top: 330px;
+}
+
+.unordered:nth-child(13){
+	margin-top: 360px;
+}
+
+.unordered:nth-child(14){
+	margin-top: 390px;
+}
+
+.unordered:nth-child(15){
+	margin-top: 420px;
+}
+
+.unordered:nth-child(16){
+	margin-top: 450px;
+}
+
+.unordered:nth-child(17){
+	margin-top: 480px;
+}
+
+.unordered:nth-child(18){
+	margin-top: 510px;
+}
+
+.unordered:nth-child(19){
+	margin-top: 540px;
+}
+
+.unordered:nth-child(20){
+	margin-top: 570px;
+}
+
+.unordered:nth-child(21){
+	margin-top: 600px;
+}
+
+
+.spades_A {
+	background-position: 700px 489px;
+}
+
+.spades_2 {
+	background-position: 650px 489px;
+}
+
+.spades_3 {
+	background-position: 600px 489px;
+}
+
+.spades_4 {
+	background-position: 550px 489px;
+}
+
+.spades_5 {
+	background-position: 500px 489px;
+}
+
+.spades_6 {
+	background-position: 450px 489px;
+}
+
+.spades_7 {
+	background-position: 400px 489px;
+}
+
+.spades_8 {
+	background-position: 350px 489px;
+}
+
+.spades_9 {
+	background-position: 300px 489px;
+}
+
+.spades_1 {
+	background-position: 250px 489px;
+}
+
+.spades_J {
+	background-position: 200px 489px;
+}
+
+.spades_Q {
+	background-position: 150px 489px;
+}
+
+.spades_K {
+	background-position: 100px 489px;
+}
+
+.diamonds_A {
+	background-position: 700px 559px;
+}
+
+.diamonds_2 {
+	background-position: 650px 559px;
+}
+
+.diamonds_3 {
+	background-position: 600px 559px;
+}
+
+.diamonds_4 {
+	background-position: 550px 559px;
+}
+
+.diamonds_5 {
+	background-position: 500px 559px;
+}
+
+.diamonds_6 {
+	background-position: 450px 559px;
+}
+
+.diamonds_7 {
+	background-position: 400px 559px;
+}
+
+.diamonds_8 {
+	background-position: 350px 559px;
+}
+
+.diamonds_9 {
+	background-position: 300px 559px;
+}
+
+.diamonds_1 {
+	background-position: 250px 559px;
+}
+
+.diamonds_J {
+	background-position: 200px 559px;
+}
+
+.diamonds_Q {
+	background-position: 150px 559px;
+}
+
+.diamonds_K {
+	background-position: 100px 559px;
+}
+
+.clubs_A {
+	background-position: 700px 769px;
+}
+
+.clubs_2 {
+	background-position: 650px 769px;
+}
+
+.clubs_3 {
+	background-position: 600px 769px;
+}
+
+.clubs_4 {
+	background-position: 550px 769px;
+}
+
+.clubs_5 {
+	background-position: 500px 769px;
+}
+
+.clubs_6 {
+	background-position: 450px 769px;
+}
+
+.clubs_7 {
+	background-position: 400px 769px;
+}
+
+.clubs_8 {
+	background-position: 350px 769px;
+}
+
+.clubs_9 {
+	background-position: 300px 769px;
+}
+
+.clubs_1 {
+	background-position: 250px 769px;
+}
+
+.clubs_J {
+	background-position: 200px 769px;
+}
+
+.clubs_Q {
+	background-position: 150px 769px;
+}
+
+.clubs_K {
+	background-position: 100px 769px;
+}
+
+.hearts_A {
+	background-position: 700px 838px;
+}
+
+.hearts_2 {
+	background-position: 650px 838px;
+}
+
+.hearts_3 {
+	background-position: 600px 838px;
+}
+
+.hearts_4 {
+	background-position: 550px 838px;
+}
+
+.hearts_5 {
+	background-position: 500px 838px;
+}
+
+.hearts_6 {
+	background-position: 450px 838px;
+}
+
+.hearts_7 {
+	background-position: 400px 838px;
+}
+
+.hearts_8 {
+	background-position: 350px 838px;
+}
+
+.hearts_9 {
+	background-position: 300px 838px;
+}
+
+.hearts_1 {
+	background-position: 250px 838px;
+}
+
+.hearts_J {
+	background-position: 200px 838px;
+}
+
+.hearts_Q {
+	background-position: 150px 838px;
+}
+
+.hearts_K {
+	background-position: 100px 838px;
+}
+
+
+
+/* style for 'cover' class should be the last till refactoring */
+.closed {
+	background-position: 50px 559px;
+}
+
