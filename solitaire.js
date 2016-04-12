@@ -99,6 +99,7 @@ function Game() {
 
 	 		if(isDeck(event.target)){
 	 			placeIntoCheckBox(event.target);
+	 			return;
 	 		}
 
 	 		if(checkedCard.classList.contains('closed') && !checkedCard.parentNode.
@@ -220,14 +221,13 @@ function Game() {
 			placeDeck(checkBox[0].childNodes);
 		} else {		
 			target.classList.remove('closed');
-			checkBox[0].appendChild(target);
-			
+			checkBox[0].appendChild(target);			
 		}		
 	}
 
 	var placeDeck = function(cardBunch) {
 		var deckCell = document.getElementsByClassName('deck-cell');
-		for(var i =	0; i < cardBunch.length; i++) {
+		for(var i = cardBunch.length - 1; i >= 0; i--) {
 			cardBunch[i].classList.add('closed');
 			deckCell[0].appendChild(cardBunch[i]);
 		}
