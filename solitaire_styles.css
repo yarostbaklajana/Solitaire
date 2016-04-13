@@ -52,12 +52,7 @@ body {
 	border-radius: 7%;
 }
 
-.lightning {
-	background-color: pink;
-	opacity: 80%;
-}
-
-.unordered-deck {
+.compressed-deck {
 	position: absolute;
 }
 
@@ -97,7 +92,7 @@ body {
 	margin: 10px 5px;
 }
 
-.unordered {	
+.exposed-deck {	
 	margin: 0;
 	padding: 0;	
 	position: absolute;
@@ -110,87 +105,87 @@ body {
 	box-shadow: 5px 5px 10px grey;
 }
 
-.unordered:first-child{
+.exposed-deck:first-child{
 	margin-top: 0;
 }
 
-.unordered:nth-child(2){
+.exposed-deck:nth-child(2){
 	margin-top: 30px;
 }
 
-.unordered:nth-child(3){
+.exposed-deck:nth-child(3){
 	margin-top: 60px;
 }
 
-.unordered:nth-child(4){
+.exposed-deck:nth-child(4){
 	margin-top: 90px;
 }
 
-.unordered:nth-child(5){
+.exposed-deck:nth-child(5){
 	margin-top: 120px;
 }
 
-.unordered:nth-child(6){
+.exposed-deck:nth-child(6){
 	margin-top: 150px;
 }
 
-.unordered:nth-child(7){
+.exposed-deck:nth-child(7){
 	margin-top: 180px;
 }
 
-.unordered:nth-child(8){
+.exposed-deck:nth-child(8){
 	margin-top: 210px;
 }
 
-.unordered:nth-child(9){
+.exposed-deck:nth-child(9){
 	margin-top: 240px;
 }
 
-.unordered:nth-child(10){
+.exposed-deck:nth-child(10){
 	margin-top: 270px;
 }
 
-.unordered:nth-child(11){
+.exposed-deck:nth-child(11){
 	margin-top: 300px;
 }
 
-.unordered:nth-child(12){
+.exposed-deck:nth-child(12){
 	margin-top: 330px;
 }
 
-.unordered:nth-child(13){
+.exposed-deck:nth-child(13){
 	margin-top: 360px;
 }
 
-.unordered:nth-child(14){
+.exposed-deck:nth-child(14){
 	margin-top: 390px;
 }
 
-.unordered:nth-child(15){
+.exposed-deck:nth-child(15){
 	margin-top: 420px;
 }
 
-.unordered:nth-child(16){
+.exposed-deck:nth-child(16){
 	margin-top: 450px;
 }
 
-.unordered:nth-child(17){
+.exposed-deck:nth-child(17){
 	margin-top: 480px;
 }
 
-.unordered:nth-child(18){
+.exposed-deck:nth-child(18){
 	margin-top: 510px;
 }
 
-.unordered:nth-child(19){
+.exposed-deck:nth-child(19){
 	margin-top: 540px;
 }
 
-.unordered:nth-child(20){
+.exposed-deck:nth-child(20){
 	margin-top: 570px;
 }
 
-.unordered:nth-child(21){
+.exposed-deck:nth-child(21){
 	margin-top: 600px;
 }
 
