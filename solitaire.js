@@ -14,6 +14,14 @@ var cardSuit = ['spades', 'hearts', 'diamonds', 'clubs'];
 
 
 function Game() {
+	this.start = function() {
+		this.createDeck();
+		this.mixDeck();
+		this.setUnorderedColumns();
+		this.setDeck();
+		this.checkCardFromColumn();
+	}
+
 	var deck;
 	this.createDeck = function(){
 		deck = []; // now Card Deck is empty
@@ -319,15 +327,8 @@ function Game() {
 }
 
 var game = new Game();
+game.start();
 
-game.createDeck();
-
-game.mixDeck();
-
-game.setUnorderedColumns();
-game.setDeck();
-var checkColCard = game.checkCardFromColumn;
-checkColCard();
 
 
 
