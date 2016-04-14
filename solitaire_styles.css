@@ -1,6 +1,12 @@
 body {
 	min-width: 650px;
 	background: url('back_pony.png');
+	-webkit-touch-callout: none; /* disable text selection in iOS Safari */
+  	-webkit-user-select: none;   /* disable text selection in Chrome/Safari/Opera */  	
+  	-moz-user-select: none;      /* disable text selection in Firefox */
+  	-ms-user-select: none;       /* disable text selection in IE/Edge */
+  	user-select: none;           
+                     
 }
 
 .container {
@@ -28,14 +34,14 @@ body {
 	height: 70px;
 	width: 50px;
 	border-radius: 7%;
-	box-shadow: 3px 3px 5px grey;
+	box-shadow: 3px 3px 5px grey;	
 }
 
 .deck-row {
 	width: 40%;
 	display: inline-block;
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 }
 
 .deck-cell {	
@@ -69,6 +75,7 @@ body {
 	width: 50%;
 	margin: 0;
 	text-align: right;
+
 }
 
 .ordered-deck {
@@ -82,7 +89,6 @@ body {
 	display: inline-block;
 	height: 100px;
 	text-align: right;
-
 }
 
 .column {
@@ -90,6 +96,7 @@ body {
 	width: 50px;
 	height: 70px;	
 	margin: 10px 5px;
+
 }
 
 .exposed-deck {	
@@ -97,6 +104,7 @@ body {
 	padding: 0;	
 	position: absolute;
 	box-shadow: 5px 5px 10px grey;
+
 }
 
 .checked {
@@ -405,3 +413,245 @@ body {
 	background-position: 50px 559px;
 }
 
+@media screen and (min-width: 650px) {
+	.card {
+	height: 94px;
+	width: 67px;
+	background: url('pony_large.jpeg');
+	}
+
+	.cell {
+	height: 94px;
+	width: 67px;
+	box-shadow: 3px 3px 5px grey;	
+	}
+
+	.deck-cell {	
+	height: 94px;
+	width: 67px;
+	}
+
+	.card-check-box {
+	height: 94px;
+	width: 67px;
+	}
+
+	.column {
+	width: 67px;
+	height: 94px;	
+	margin: 10px 5px;
+	}
+
+	.spades_A {
+	background-position: 942px 94px;
+	}
+
+	.spades_2 {
+		background-position: 874px 94px;
+	}
+
+	.spades_3 {
+		background-position: 807px 94px;
+	}
+
+	.spades_4 {
+		background-position: 740px 94px;
+	}
+
+	.spades_5 {
+		background-position: 672px 94px;
+	}
+
+	.spades_6 {
+		background-position: 605px 94px;
+	}
+
+	.spades_7 {
+		background-position: 538px 94px;
+	}
+
+	.spades_8 {
+		background-position: 471px 94px;
+	}
+
+	.spades_9 {
+		background-position: 404px 94px;
+	}
+
+	.spades_1 {
+		background-position: 337px 94px;
+	}
+
+	.spades_J {
+		background-position: 270px 94px;
+	}
+
+	.spades_Q {
+		background-position: 202px 94px;
+	}
+
+	.spades_K {
+		background-position: 135px 94px;
+	}
+
+	.diamonds_A {
+		background-position: 942px 188px;
+	}
+
+	.diamonds_2 {
+		background-position: 874px 188px;
+	}
+
+	.diamonds_3 {
+		background-position: 807px 188px;
+	}
+
+	.diamonds_4 {
+		background-position: 740px 188px;
+	}
+
+	.diamonds_5 {
+		background-position: 672px 188px;
+	}
+
+	.diamonds_6 {
+		background-position: 605px 188px;
+	}
+
+	.diamonds_7 {
+		background-position: 538px 188px;
+	}
+
+	.diamonds_8 {
+		background-position: 471px 188px;
+	}
+
+	.diamonds_9 {
+		background-position: 404px 188px;
+	}
+
+	.diamonds_1 {
+		background-position: 337px 188px;
+	}
+
+	.diamonds_J {
+		background-position: 270px 188px;
+	}
+
+	.diamonds_Q {
+		background-position: 202px 188px;
+	}
+
+	.diamonds_K {
+		background-position: 135px 188px;
+	}
+
+	.clubs_A {
+		background-position: 942px 470px;
+	}
+
+	.clubs_2 {
+		background-position: 874px 470px;
+	}
+
+	.clubs_3 {
+		background-position: 807px 470px;
+	}
+
+	.clubs_4 {
+		background-position: 740px 470px;
+	}
+
+	.clubs_5 {
+		background-position: 672px 470px;
+	}
+
+	.clubs_6 {
+		background-position: 605px 470px;
+	}
+
+	.clubs_7 {
+		background-position: 538px 470px;
+	}
+
+	.clubs_8 {
+		background-position: 471px 470px;
+	}
+
+	.clubs_9 {
+		background-position: 404px 470px;
+	}
+
+	.clubs_1 {
+		background-position: 337px 470px;
+	}
+
+	.clubs_J {
+		background-position: 270px 470px;
+	}
+
+	.clubs_Q {
+		background-position: 202px 470px;
+	}
+
+	.clubs_K {
+		background-position: 135px 470px;
+	}
+
+	.hearts_A {
+		background-position: 942px 564px;
+	}
+
+	.hearts_2 {
+		background-position: 874px 564px;
+	}
+
+	.hearts_3 {
+		background-position: 807px 564px;
+	}
+
+	.hearts_4 {
+		background-position: 740px 564px;
+	}
+
+	.hearts_5 {
+		background-position: 672px 564px;
+	}
+
+	.hearts_6 {
+		background-position: 605px 564px;
+	}
+
+	.hearts_7 {
+		background-position: 538px 564px;
+	}
+
+	.hearts_8 {
+		background-position: 471px 564px;
+	}
+
+	.hearts_9 {
+		background-position: 404px 564px;
+	}
+
+	.hearts_1 {
+		background-position: 337px 564px;
+	}
+
+	.hearts_J {
+		background-position: 270px 564px;
+	}
+
+	.hearts_Q {
+		background-position: 202px 564px;
+	}
+
+	.hearts_K {
+		background-position: 135px 564px;
+	}
+
+	.closed {
+	background-position: 67px 188px;
+	}
+
+}
