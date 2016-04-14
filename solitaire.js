@@ -102,8 +102,14 @@ function Game() {
 	 			return;
 	 		} 
 
-	 		if(needToBeUnchecked(previousCard, checkedCard)) {	 			
-	 			uncheck(checkedCard);
+	 		if(needToBeUnchecked(previousCard, checkedCard)) {
+	 			if(previousCard.parentNode.id == 'checkbox' && checkedCard.parentNode.id == 'deck') {
+	 				uncheck(previousCard);
+	 			} else {	 			
+	 				uncheck(checkedCard);
+	 				return;
+	 			}
+
 	 		} 
 
 	 		if(isDeck(event.target)){
@@ -144,7 +150,6 @@ function Game() {
 	 		passThrougEachCardInSelectedBunchAndUncheckEveryCard(delivery, receiving, receivingColumn);	 			
 	 		openCard(deliveryColumn);
 	 		return;
-
 	 	}
 
 	 	if(isValidCollectionOrder(delivery, receiving)) {
@@ -156,6 +161,7 @@ function Game() {
 	 		openCard(deliveryColumn);
 	 		return;
 	 	}
+	 	uncheck(delivery);
 	 	return;	 	
 	}
 
@@ -254,6 +260,7 @@ function Game() {
 	 	}
 	}
 
+	
 	var putCardInOrder = function(card, cell) {
 		var delivery = card.parentNode;
 		if(isCorrectOrderCardDeck(card, cell)) {
@@ -272,7 +279,7 @@ function Game() {
 		openCard(delivery);
 		return;
 	}
-
+	
 	var isCorrectOrderCardDeck = function(card, receiving){		
 			var index;
 			if(receiving.classList.contains('ordered-deck')) {
@@ -285,7 +292,7 @@ function Game() {
 				var itsCardSuit = card.getAttribute('data-suit');
 				var needCardSuit = receiving.getAttribute('data-suit');				
 				return ((itsCardSeniority == needSeniority) && (itsCardSuit == needCardSuit));
-			}		
+			}				
 	}
 
 	var uncheck = function(target) {
@@ -307,6 +314,8 @@ function Game() {
 			return currentTarget.classList.contains('checked');
 		}
 	}
+
+
 }
 
 var game = new Game();
