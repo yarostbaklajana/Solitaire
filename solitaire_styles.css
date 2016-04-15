@@ -1,6 +1,7 @@
 body {
 	min-width: 650px;
 	background: url('back_pony.png');
+	background-size: cover;
 	-webkit-touch-callout: none; /* disable text selection in iOS Safari */
   	-webkit-user-select: none;   /* disable text selection in Chrome/Safari/Opera */  	
   	-moz-user-select: none;      /* disable text selection in Firefox */
